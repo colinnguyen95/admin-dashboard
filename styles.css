@@ -1,0 +1,33 @@
+.dashboard-container{
+    display: grid;
+    height: 100vh;
+    /* grid-template-rows: 4fr 2fr 2fr; */
+    /* grid-template-rows: minmax(100px, auto);; */
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar main-content main-content main-content"
+        "sidebar main-content main-content main-content"
+        "sidebar main-content main-content main-content"
+        "sidebar main-content main-content main-content"
+}
+
+.section{
+    background-color: pink;
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main-content{
+    grid-area: main-content;
+}
